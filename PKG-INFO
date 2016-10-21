@@ -2,7 +2,7 @@ Metadata-Version: 1.1
 Name: python-faasclient
 Version: 0.2.1
 Summary: Python bindings to the Filer as a Service API.
-Home-page: https://github/globocom/python-faasclient
+Home-page: https://github.com/globocom/python-faasclient
 Author: Mauro Murari
 Author-email: mauro_murari@hotmail.com
 License: BSD

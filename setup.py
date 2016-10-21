@@ -10,12 +10,6 @@ from pip.req import parse_requirements
 from setuptools import setup, find_packages
 
 
-def get_version(package):
-    """Return package version as listed in `__version__` in `init.py`."""
-    init_py = open(join(package, '__init__.py')).read()
-    return re.search("__version__ = ['\"]([^'\"]+)['\"]", init_py).group(1)
-
-
 def get_path(*p):
     return join(dirname(abspath(__file__)), *p)
 
@@ -26,11 +20,11 @@ reqs = [str(ir.req) for ir in install_reqs]
 
 setup(
     name="python-faasclient",
-    url="https://gitlab.globoi.com/storm/python-faasclient",
-    version=get_version("faasclient"),
-    description='Python bindings to the Filer as a Service API.',
-    author='STORM',
-    author_email='storm@corp.globo.com',
+    url="https://github.com/globocom/python-faasclient",
+    version='0.2.1',
+    description='Python mock to the Filer as a Service API.',
+    author='Mauro Murari',
+    author_email='mauro_murari@hotmail.com',
     packages=find_packages(),
     install_requires=reqs,
     include_package_data=True,
