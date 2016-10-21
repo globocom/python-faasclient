@@ -19,7 +19,7 @@ reqs = [str(ir.req) for ir in install_reqs]
 setup(
     name="python-faasclient",
     url="https://github.com/globocom/python-faasclient",
-    version='0.2.1',
+    version='0.2.2',
     description='Python mock to the Filer as a Service API.',
     author='Mauro Murari',
     author_email='mauro_murari@hotmail.com',
